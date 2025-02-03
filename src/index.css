@@ -5,3 +5,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+@theme {
+  /* Fonts */
+  --font-*: initial;
+  --font-display: "Inter", monospace;
+  --text-size-h1: 32px;
+  --font-weight-h1: 560;
+  --text-size-h2: 24px;
+  --font-weight-h2: 560;
+  --text-size-h3: 20px;
+  --font-weight-h3: 560;
+  --text-size-h4: 18px;
+  --font-weight-h4: 560;
+  --text-size-body-7: 32px;
+  --text-size-body-6: 24px;
+  --text-size-body-5: 20px;
+  --text-size-body-4: 18px;
+  --text-size-body-3: 16px;
+  --text-size-body-2: 14px;
+  --text-size-body-1: 14px;
+  --text-size-emphasis: 16px;
+  --font-weight-body: 400;
+  --font-weight-body-strong: 560;
+
+  /* Text Colors */
+  --text-color-emphasis: oklch(0.5013 0.047 266);
+}
