@@ -1,14 +1,9 @@
-// MODULES //
-
-import Nav from "../components/Nav";
-
 
 // MAIN //
 
 function Portfolio() {
 	return(
 		<>
-			<Nav />
 			<h1>Portfolio</h1>
 		</>
 	);

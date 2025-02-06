@@ -4,6 +4,7 @@ import { RouterProvider, createBrowserRouter } from "react-router";
 import Home from "./pages/home/Home.jsx";
 import Blog from "./pages/Blog/Blog.jsx";
 import Portfolio from "./pages/Portfolio/Portfolio.jsx";
+import Layout from "./pages/components/layout.jsx";
 
 
 // VARIABLES //
@@ -11,15 +12,21 @@ import Portfolio from "./pages/Portfolio/Portfolio.jsx";
 const router = createBrowserRouter( [
 	{
 		path: "/",
-		element: <Home />
-	},
-	{
-		path: "/blog",
-		element: <Blog />
-	},
-	{
-		path: "/portfolio",
-		element: <Portfolio />
+		element: <Layout/>,
+		children: [
+			{
+				path: "/",
+				element: <Home/>
+			},
+			{
+				path: "/blog",
+				element: <Blog/>
+			},
+			{
+				path: "/portfolio",
+				element: <Portfolio/>
+			}
+		]
 	}
 ] );
 
